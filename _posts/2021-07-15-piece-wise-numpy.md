@@ -8,7 +8,7 @@ As part of my internship, I needed to implement the following piece-wise functio
 
 This can be done on numpy through something like this:
 
-```
+```python
 def upperfn(time,a,beta,t0,t1,tfall,trise):
     val = (a*(1 - beta*(time-t0)/(t1-t0)))/(1+np.exp(-(time-t0)/trise))
     return val
